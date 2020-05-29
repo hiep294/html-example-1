@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.4;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0.75rem 0;
+}
+
+/* Utility classes */
+.text-primary {
+  color: #93cb52;
+}
+
+.btn {
+  color: white;
+  background: #93cb52;
+  padding: 0.5rem 2rem;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background: #7ab436;
+}
+
+.btn-dark {
+  background: #333;
+  color: #fff;
+}
+
+/* Navbar */
+/* handle: position, background */
+#navbar-layout {
+  /* for sticky */
+  position: sticky;
+  top: 0;
+  background: #333;
+  color: white;
+}
+
+/* handle width, padding */
+#navbar-container {
+  padding-left: 16px;
+  padding-right: 16px;
+  margin: auto;
+  max-width: 1132px; /* width = real width + padding-left + padding-right */
+}
+
+/* handle height and other */
+#navbar-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 65px;
+}
+
+#navbar-content ul#nav-link {
+  display: flex;
+  list-style: none;
+}
+
+#navbar-content ul#nav-link li a {
+  color: white;
+  padding: 0.75rem;
+}
+
+#navbar-content ul#nav-link li a:hover {
+  background: #93cb52;
+  border-radius: 5px;
+}
+/* Showcase */
+#showcase-layout {
+  background-image: url("../img/showcase.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; /* cover will make image responsive */
+  background-position: center;
+  height: 100vh;
+}
+
+#showcase-container {
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  align-items: center; /*also making block in content*/
+  justify-content: center;
+}
+
+#showcase-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /*also making block in content*/
+  justify-content: center;
+  text-align: center;
+  color: white;
+  max-width: 1100px;
+}
+
+#showcase-content h1 {
+  font-size: 4rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.1;
+}
+
+#showcase-content p {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+/* What we do */
+#what-we-do-layout {
+  color: #333;
+}
+
+#what-we-do-container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+#what-we-do-content h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin: 1rem;
+  /* margin-bottom: 0.75rem; */
+}
+
+#what-we-do-items {
+  display: flex;
+}
+
+#what-we-do-items .what-we-do-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+}
+
+#what-we-do-items .what-we-do-item i {
+  background-color: #93cb52;
+  padding: 1rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  margin: 1rem;
+}
+
+/* who we are */
+#who-we-are-layout {
+  color: white;
+  background-color: #333;
+}
+#who-we-are-content {
+  display: flex;
+}
+
+#who-we-are-img {
+  background-image: url("../img/people.jpg");
+  flex: 1;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#who-we-are-text {
+  flex: 1;
+  padding: 2rem;
+}
+
+#who-we-are-text ul {
+  margin: 0.5rem 0;
+}
+
+#who-we-are-text li {
+  list-style-type: none;
+  padding: 0.5rem 0;
+  border-bottom: 1px dotted #444;
+}
